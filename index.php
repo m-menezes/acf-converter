@@ -15,7 +15,7 @@ function acf_converter_init(){
  
 function acf_conveter(){
     // Verify administrative interface page and user is administrator
-    if(is_admin() && current_user_can('administrator')){
+    if( is_admin() ){
 
         // Register CSS
         add_css_acf_converter();
