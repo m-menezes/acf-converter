@@ -27,7 +27,7 @@ function acf_conveter(){
         if($_GET['group']){
             $json = $groups[$_GET['group']];
             $file = '"'.$json['title'].'__'.$_GET['group'].'"';
-            $fields = acf_get_local_fields($_GET['group']);
+            $fields = acf_get_fields($_GET['group']);
             $json['fields'] = $fields;
             $json = json_encode($json, JSON_PRETTY_PRINT);
         }
